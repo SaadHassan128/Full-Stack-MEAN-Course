@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Student Club Registration Page for ADA Egypt"
+    />
+    <title>Student Club Registration - ADA Egypt</title>
+  </head>
+
+  <!-- Main Content -->
+  <body>
+    <h1>Welcome to ADA Egypt Student Clubs</h1>
+
+    <h2>Join Our Student Clubs Today</h2>
+
+    <p>
+      At ADA Egypt, we believe in learning beyond the classroom. Our clubs help
+      students explore passions, gain new skills, and build lasting friendships.
+    </p>
+
+    <!-- University Image -->
+    <img
+      src="https://via.placeholder.com/400x250"
+      alt="ADA Egypt Campus"
+      width="400"
+    />
+
+    <p>
+      Learn more about our university at
+      <a href="https://adaegypt.edu" target="_blank">our official website</a>
+    </p>
+
+    <!-- Popular Clubs Section -->
+    <h2>Popular Student Clubs:</h2>
+    <ul>
+      <li>Photography Club</li>
+      <li>Debate Society</li>
+      <li>Programming Circle</li>
+    </ul>
+
+    <!-- Benefits Section -->
+    <h2>Things You'll Gain:</h2>
+    <ol>
+      <li>Teamwork Skills</li>
+      <li>Leadership Opportunities</li>
+      <li>Hands-on Experience</li>
+    </ol>
+
+    <!-- Video Section -->
+    <h2>Watch our Club Promo:</h2>
+    <video controls width="500">
+      <source src="club-promo.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <!-- Audio Section -->
+    <h2>Listen to our Podcast:</h2>
+    <audio controls>
+      <source src="club-podcast.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- YouTube Embed -->
+    <h2>Follow us on YouTube:</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      allowfullscreen
+    >
+    </iframe>
+
+    <!-- Events Table -->
+    <h2>Upcoming Club Events</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="70%">
+      <thead>
+        <tr>
+          <th colspan="3">March Events</th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>March 10</td>
+          <td>Photography Workshop</td>
+          <td>Room A1</td>
+        </tr>
+        <tr>
+          <td>March 15</td>
+          <td>AI Debate</td>
+          <td>Auditorium</td>
+        </tr>
+        <tr>
+          <td>March 22</td>
+          <td>Coding Hackathon</td>
+          <td>Lab B3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Club Highlights -->
+    <h2>Club Highlights</h2>
+    <p>Over 50 plus active clubs every semester</p>
+
+    <!-- Registration Form -->
+    <h2>Register Now</h2>
+
+    <form>
+      <!-- Text Input -->
+      <label for="fullname">Full Name:</label><br />
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Saad Hassan Saad"
+        required
+      /><br /><br />
+
+      <!-- Email Input -->
+      <label for="email">Email Address:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="name@adaegypt.com"
+        required
+      /><br /><br />
+
+      <!-- Password Input -->
+      <label for="password">Create Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <!-- Number Input -->
+      <label for="age">Your Age:</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="16"
+        max="40"
+        required
+      /><br /><br />
+
+      <!-- Date Input -->
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- Dropdown Select -->
+      <label for="club">Choose Your Club:</label><br />
+      <select id="club" name="club" required>
+        <option value="">Select a club</option>
+        <option value="photography">Photography</option>
+        <option value="debate">Debate Society</option>
+        <option value="programming">Programming Circle</option>
+        <option value="robotics">Robotics Club</option></select
+      ><br /><br />
+
+      <!-- File Upload -->
+      <label for="resume">Upload Resume (PDF):</label><br />
+      <input type="file" id="resume" name="resume" accept=".pdf" /><br /><br />
+
+      <!-- Radio Buttons -->
+      <p>Experience Level:</p>
+      <input type="radio" id="beginner" name="level" value="beginner" checked />
+      <label for="beginner">Beginner</label><br />
+      <input type="radio" id="intermediate" name="level" value="intermediate" />
+      <label for="intermediate">Intermediate</label><br />
+      <input type="radio" id="advanced" name="level" value="advanced" />
+      <label for="advanced">Advanced</label><br /><br />
+
+      <!-- Checkboxes -->
+      <p>Interests (select all that apply):</p>
+      <input type="checkbox" id="tech" name="interest" value="technology" />
+      <label for="tech">Technology</label><br />
+      <input type="checkbox" id="art" name="interest" value="art" />
+      <label for="art">Art and Design</label><br />
+      <input type="checkbox" id="business" name="interest" value="business" />
+      <label for="business">Business</label><br />
+      <input type="checkbox" id="sports" name="interest" value="sports" />
+      <label for="sports">Sports</label><br /><br />
+
+      <!-- Textarea -->
+      <label for="motivation">Why do you want to join:</label><br />
+      <textarea
+        id="motivation"
+        name="motivation"
+        rows="4"
+        cols="50"
+        placeholder="Tell us about your motivation..."
+      ></textarea
+      ><br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Register" />
+
+      <!-- Reset Button -->
+      <input type="reset" value="Clear Form" />
+    </form>
+
+    <!-- Footer Information -->
+    <hr />
+    <p>
+      Instructor: Saad Hassan Saad | Head of Software Department | ADA Egypt
+    </p>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Webpage demonstrating media elements and HTML tables"
+    />
+    <title>Media and Tables Demo</title>
+  </head>
+
+  <!-- Main Content -->
+  <body>
+    <h1>Enhanced Webpage with Media and Tables</h1>
+
+    <!-- Media Section -->
+    <h2>Media Elements</h2>
+
+    <!-- Audio Element -->
+    <h3>Audio Player</h3>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <h3>Video Player</h3>
+    <video controls width="500">
+      <source src="sample-video.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <!-- YouTube Embed using iframe -->
+    <h3>Embedded YouTube Video</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      allowfullscreen
+    >
+    </iframe>
+
+    <!-- Table Section -->
+    <h2>Course Schedule Table</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="80%">
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Course Name</th>
+          <th>Instructor</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML Fundamentals</td>
+          <td>Saad Hassan Saad</td>
+          <td>3 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>CSS Styling</td>
+          <td>Saad Hassan Saad</td>
+          <td>3 hours</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td colspan="2">JavaScript Programming</td>
+          <td>4 hours</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Weekend</td>
+          <td>React Basics</td>
+          <td>Saad Hassan Saad</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Node.js Backend</td>
+          <td>Saad Hassan Saad</td>
+          <td>2 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Additional Table: Instructor Profile -->
+    <h2>Instructor Information</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0" width="60%">
+      <thead>
+        <tr>
+          <th colspan="2">Instructor Profile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="30%">Name</td>
+          <td>Saad Hassan Saad</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>28 years</td>
+        </tr>
+        <tr>
+          <td>Education</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Position</td>
+          <td>Head of Software Department</td>
+        </tr>
+        <tr>
+          <td>Organization</td>
+          <td>ADA Egypt</td>
+        </tr>
+        <tr>
+          <td>Specialization</td>
+          <td>Full Stack Web Development</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
