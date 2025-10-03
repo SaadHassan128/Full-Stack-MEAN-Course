@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo - Saad Hassan Saad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>CSS Box Model Demonstration</h1>
+        <p>By Saad Hassan Saad - Head of Software Department, ADA Egypt</p>
+    </header>
+
+    <main>
+        <section class="box-model-section">
+            <h2>Basic Box Model</h2>
+            <div class="box">Hello Box</div>
+            <p class="description">This box demonstrates padding, margin, and border properties.</p>
+        </section>
+
+        <section class="box-sizing-section">
+            <h2>Box Sizing Comparison</h2>
+            <div class="container">
+                <div class="box content-box">Content Box</div>
+                <div class="box border-box">Border Box</div>
+            </div>
+            <p class="description">Both boxes have width: 200px, but different box-sizing values.</p>
+        </section>
+
+        <section class="display-section">
+            <h2>Display Properties</h2>
+            <div class="display-demo">
+                <span class="inline-element">Inline 1</span>
+                <span class="inline-element">Inline 2</span>
+                <span class="inline-block-element">Inline-Block</span>
+                <div class="block-element">Block Element</div>
+            </div>
+        </section>
+
+        <section class="position-section">
+            <h2>Positioning Examples</h2>
+            <div class="position-container">
+                <div class="static-box">Static (Default)</div>
+                <div class="relative-box">Relative (moved 20px down, 30px right)</div>
+                <div class="absolute-parent">
+                    Parent (Relative)
+                    <div class="absolute-box">Absolute (positioned inside parent)</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fixed-box">Fixed Position</div>
+    </main>
+
+    <footer>
+        <p>Created by Saad Hassan Saad - Full Stack Web Development Instructor</p>
+    </footer>
+</body>
+</html>
