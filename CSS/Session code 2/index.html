@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model & Positioning - Complete Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed Back to Top Button -->
+    <button
+      class="back-to-top"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    >
+      Top
+    </button>
+
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+      <h1>CSS Box Model & Positioning - Complete Training</h1>
+      <p>
+        Instructor: Saad Hassan Saad | Head of Software Department, ADA Egypt
+      </p>
+    </header>
+
+    <!-- Fixed Sidebar -->
+    <aside class="sidebar">
+      <h3>Topics</h3>
+      <ul>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#product-card">Product Card</a></li>
+        <li><a href="#positioning">Positioning</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#comparison">Comparison</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Notification Alert -->
+      <div class="notification">Session 2 Materials Available</div>
+
+      <!-- Section 1: Box Model Visualization -->
+      <section id="box-model" class="content-section">
+        <h2>1. Understanding the Box Model</h2>
+
+        <div class="box-model-visual">
+          <div class="margin-layer">
+            <div class="margin-label">Margin: 30px</div>
+            <div class="border-layer">
+              <div class="border-label">Border: 5px</div>
+              <div class="padding-layer">
+                <div class="padding-label">Padding: 20px</div>
+                <div class="content-layer">
+                  <div class="content-label">Content<br />200x100px</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculation-box">
+          <h3>Total Dimensions (content-box)</h3>
+          <p>
+            <strong>Width:</strong> 200px (content) + 40px (padding) + 10px
+            (border) + 60px (margin) = 310px
+          </p>
+          <p>
+            <strong>Height:</strong> 100px (content) + 40px (padding) + 10px
+            (border) + 60px (margin) = 210px
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: Product Card Example -->
+      <section id="product-card" class="content-section">
+        <h2>2. Product Card - Box Model Practice</h2>
+
+        <div class="product-card">
+          <h3>Full Stack Web Development Course</h3>
+          <p class="price">$299.99</p>
+          <p class="description">
+            Learn complete web development with industry expert Saad Hassan
+            Saad. Covers HTML, CSS, JavaScript, React, Node.js and deployment
+            strategies.
+          </p>
+          <button class="buy-button">Enroll Now</button>
+        </div>
+
+        <div class="code-explanation">
+          <h4>Applied Box Model Properties:</h4>
+          <ul>
+            <li>Width: 300px</li>
+            <li>Padding: 15px (internal spacing)</li>
+            <li>Border: 2px solid black</li>
+            <li>Border-radius: 8px (rounded corners)</li>
+            <li>Margin: 20px auto (centered)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3: Border-Box vs Content-Box -->
+      <section id="comparison" class="content-section">
+        <h2>3. Box-Sizing Comparison</h2>
+
+        <div class="comparison-container">
+          <div class="comparison-box content-box-demo">
+            <h4>content-box (default)</h4>
+            <p>Width: 200px</p>
+            <p>Padding: 20px</p>
+            <p>Border: 5px</p>
+            <p class="highlight">Total: 250px</p>
+          </div>
+
+          <div class="comparison-box border-box-demo">
+            <h4>border-box</h4>
+            <p>Width: 200px</p>
+            <p>Padding: 20px</p>
+            <p>Border: 5px</p>
+            <p class="highlight">Total: 200px</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Positioning Examples -->
+      <section id="positioning" class="content-section">
+        <h2>4. CSS Positioning</h2>
+
+        <div class="positioning-demo">
+          <h4>Static Positioning (Default)</h4>
+          <div class="position-container">
+            <div class="position-box static-box">Static</div>
+          </div>
+
+          <h4>Relative Positioning</h4>
+          <div class="position-container">
+            <div class="position-box relative-box">
+              Relative (top: 20px, left: 30px)
+            </div>
+          </div>
+
+          <h4>Absolute Positioning</h4>
+          <div class="position-container">
+            <div class="position-box absolute-box">
+              Absolute (top: 10px, right: 10px)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Navigation Menu -->
+      <section id="navigation" class="content-section">
+        <h2>5. Navigation Menu with Display Properties</h2>
+
+        <nav class="demo-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Courses</a>
+              <ul class="dropdown">
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Node.js</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+              <ul class="dropdown">
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">ADA Egypt</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Section 6: Display Properties -->
+      <section class="content-section">
+        <h2>6. Display Properties</h2>
+
+        <h4>Block Elements</h4>
+        <div class="block-element">Block Element 1</div>
+        <div class="block-element">Block Element 2</div>
+
+        <h4>Inline-Block Elements</h4>
+        <div class="inline-block-element">Inline-Block 1</div>
+        <div class="inline-block-element">Inline-Block 2</div>
+        <div class="inline-block-element">Inline-Block 3</div>
+      </section>
+
+      <!-- Extra scroll space -->
+      <div style="height: 500px; padding: 40px; background-color: #f9f9f9">
+        <h3>Scroll Down to Test Fixed and Sticky Elements</h3>
+        <p>
+          Notice how the header stays at the top and the back-to-top button
+          remains visible.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
