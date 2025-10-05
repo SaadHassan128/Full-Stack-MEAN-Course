@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics - Saad Hassan Saad</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ADA Egypt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container mt-5">
+        
+        <!-- Row with 2 Columns -->
+        <div class="row">
+            
+            <!-- Left Column -->
+            <div class="col-md-6 mb-4">
+                <div class="bg-light p-4 rounded">
+                    <h2 class="text-dark mb-3">About the Instructor</h2>
+                    <p class="text-secondary">Name: <strong>Saad Hassan Saad</strong></p>
+                    <p class="text-secondary">Age: <strong>28 years old</strong></p>
+                    <p class="text-secondary">Education: <strong>Computer Science Graduate</strong></p>
+                    <p class="text-secondary">Position: <strong>Head of Software Department</strong></p>
+                    <p class="text-secondary">Company: <strong>ADA Egypt</strong></p>
+                    <p class="text-secondary">Specialty: <strong>Full Stack Web Development</strong></p>
+                    <p class="mb-3">Favorite Color: <span class="badge bg-dark">Black</span></p>
+                    <button class="btn btn-dark mt-2">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 mb-4">
+                <div class="bg-dark text-white p-4 rounded">
+                    <h2 class="mb-3">Full Stack Development</h2>
+                    <img src="ADA.jpg" 
+                         alt="Web Development" 
+                         class="img-fluid rounded mb-3">
+                    <p>Learn modern web development with industry-standard tools and frameworks.</p>
+                    <ul class="text-light">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Bootstrap Framework</li>
+                        <li>React & Node.js</li>
+                        <li>Database Management</li>
+                    </ul>
+                    <button class="btn btn-light mt-2">Enroll Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Additional Section with Colors and Spacing -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="bg-primary text-white p-4 rounded mb-3">
+                    <h3>Why Choose ADA Egypt?</h3>
+                    <p class="mb-0">Professional training with experienced instructors in modern technologies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row mt-3">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark">Expert Instructors</h5>
+                        <p class="card-text text-secondary">Learn from industry professionals with real-world experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark">Hands-on Projects</h5>
+                        <p class="card-text text-secondary">Build real applications to strengthen your portfolio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-dark">Career Support</h5>
+                        <p class="card-text text-secondary">Get guidance and support for your career path.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">Academy of Digital Arts Egypt - Full Stack Web Development Course</p>
+            <p class="mb-0">Instructor: Saad Hassan Saad</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
