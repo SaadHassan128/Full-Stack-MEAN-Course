@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Session 1 - Complete Examples</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap Session 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#example1">Basic Setup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#example2">Grid System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#example3">Components</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container">
+      <!-- Course Information Header -->
+      <header class="custom-header text-center bg-light mb-5 rounded">
+        <h1 class="text-primary">Bootstrap Session 1: Complete Examples</h1>
+        <p class="lead">Introduction and Core Concepts</p>
+        <hr />
+        <p class="mb-1"><strong>Instructor:</strong> Saad Hassan Saad</p>
+        <p class="mb-1">
+          <strong>Position:</strong> Head of Software Department, ADA Egypt
+        </p>
+        <p class="mb-0">
+          <strong>Role:</strong> Full Stack Web Development Instructor
+        </p>
+      </header>
+
+      <!-- EXAMPLE 1: Basic Bootstrap Setup -->
+      <section id="example1" class="example-section">
+        <h2 class="section-title">Example 1: Basic Bootstrap Setup</h2>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Getting Started with Bootstrap</h3>
+            <p>
+              Bootstrap makes responsive web development faster and easier. This
+              framework provides pre-built components and a powerful grid
+              system.
+            </p>
+
+            <div class="alert alert-info" role="alert">
+              <strong>Key Concept:</strong> Bootstrap uses a mobile-first
+              approach, meaning designs work on small screens first, then scale
+              up to larger screens.
+            </div>
+
+            <h4>Course Information</h4>
+            <ul>
+              <li><strong>Instructor:</strong> Saad Hassan Saad</li>
+              <li><strong>Age:</strong> 28</li>
+              <li><strong>Education:</strong> Computer Science Graduate</li>
+              <li>
+                <strong>Position:</strong> Head of Software Department at ADA
+                Egypt
+              </li>
+              <li><strong>Teaching:</strong> Full Stack Web Development</li>
+              <li>
+                <strong>Favorite Color:</strong>
+                <span class="badge bg-dark">Black</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-light p-3 rounded">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="#example1">Basic Setup</a></li>
+                <li><a href="#example2">Grid System</a></li>
+                <li><a href="#example3">Components</a></li>
+                <li><a href="#" class="text-muted">Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXAMPLE 2: Responsive Grid System -->
+      <section id="example2" class="example-section">
+        <h2 class="section-title">Example 2: Responsive Grid System</h2>
+        <p class="text-muted mb-4">
+          The Bootstrap grid system uses a 12-column layout and responsive
+          breakpoints.
+        </p>
+
+        <!-- Equal width columns -->
+        <h3 class="mt-4 mb-3">Equal Width Columns</h3>
+        <div class="row grid-demo">
+          <div class="col">Equal Width Column 1</div>
+          <div class="col">Equal Width Column 2</div>
+          <div class="col">Equal Width Column 3</div>
+        </div>
+
+        <!-- Specific column sizes -->
+        <h3 class="mt-4 mb-3">Specific Column Widths</h3>
+        <div class="row grid-demo">
+          <div class="col-4">4 Columns (1/3 width)</div>
+          <div class="col-8">8 Columns (2/3 width)</div>
+        </div>
+
+        <!-- Responsive columns -->
+        <h3 class="mt-4 mb-3">Responsive Breakpoints</h3>
+        <div class="row grid-demo">
+          <div class="col-12 col-md-6">
+            Full width on small screens, half width on medium+
+          </div>
+          <div class="col-12 col-md-6">
+            Full width on small screens, half width on medium+
+          </div>
+        </div>
+
+        <!-- Multi-device responsive layout -->
+        <h3 class="mt-4 mb-3">Multi-device Responsive Layout</h3>
+        <div class="row grid-demo">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            12 cols on xs, 6 on sm, 4 on md, 3 on lg+
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            12 cols on xs, 6 on sm, 4 on md, 3 on lg+
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            12 cols on xs, 6 on sm, 4 on md, 3 on lg+
+          </div>
+          <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+            12 cols on xs, 6 on sm, 12 on md, 3 on lg+
+          </div>
+        </div>
+
+        <!-- Column offsets -->
+        <h3 class="mt-4 mb-3">Column Offsets</h3>
+        <div class="row grid-demo">
+          <div class="col-md-6 offset-md-3">
+            6-wide column, offset by 3 (centered)
+          </div>
+        </div>
+      </section>
+
+      <!-- EXAMPLE 3: Bootstrap Components -->
+      <section id="example3" class="example-section">
+        <h2 class="section-title">Example 3: Bootstrap Components Overview</h2>
+
+        <!-- Buttons section -->
+        <div class="mb-5">
+          <h3 class="mb-3">Buttons</h3>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <button class="btn btn-outline-primary">Outline Primary</button>
+            <button class="btn btn-outline-secondary">Outline Secondary</button>
+            <button class="btn btn-outline-dark">Outline Dark</button>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-primary btn-lg">Large Button</button>
+            <button class="btn btn-primary">Regular Button</button>
+            <button class="btn btn-primary btn-sm">Small Button</button>
+          </div>
+        </div>
+
+        <!-- Images section -->
+        <div class="mb-5">
+          <h3 class="mb-3">Images</h3>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <img
+                src="Images\1.jpeg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+              <p class="mt-2">Responsive image (img-fluid)</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="Images\1.jpeg"
+                class="img-thumbnail"
+                alt="Thumbnail image"
+              />
+              <p class="mt-2">Thumbnail image (img-thumbnail)</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <img
+                src="Images\1.jpeg"
+                class="img-fluid rounded-circle"
+                alt="Circular image"
+              />
+              <p class="mt-2">Circular image (rounded-circle)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colors section -->
+        <div class="mb-5">
+          <h3 class="mb-3">Colors</h3>
+
+          <!-- Text colors -->
+          <div class="mb-4">
+            <h4>Text Colors</h4>
+            <p class="text-primary">Primary text color</p>
+            <p class="text-secondary">Secondary text color</p>
+            <p class="text-success">Success text color</p>
+            <p class="text-danger">Danger text color</p>
+            <p class="text-warning">Warning text color</p>
+            <p class="text-info">Info text color</p>
+            <p class="text-light bg-dark d-inline-block p-1">
+              Light text color (on dark background)
+            </p>
+            <p class="text-dark">Dark text color</p>
+            <p class="text-muted">Muted text color</p>
+          </div>
+
+          <!-- Background colors -->
+          <div>
+            <h4>Background Colors</h4>
+            <div class="p-3 mb-2 bg-primary text-white rounded">
+              Primary background
+            </div>
+            <div class="p-3 mb-2 bg-secondary text-white rounded">
+              Secondary background
+            </div>
+            <div class="p-3 mb-2 bg-success text-white rounded">
+              Success background
+            </div>
+            <div class="p-3 mb-2 bg-danger text-white rounded">
+              Danger background
+            </div>
+            <div class="p-3 mb-2 bg-warning rounded">Warning background</div>
+            <div class="p-3 mb-2 bg-info rounded">Info background</div>
+            <div class="p-3 mb-2 bg-light rounded">Light background</div>
+            <div class="p-3 mb-2 bg-dark text-white rounded">
+              Dark background
+            </div>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="mb-5">
+          <h3 class="mb-3">Alerts</h3>
+          <div class="alert alert-primary" role="alert">
+            This is a primary alert with example text.
+          </div>
+          <div class="alert alert-success" role="alert">
+            This is a success alert - often used for confirmation messages.
+          </div>
+          <div class="alert alert-warning" role="alert">
+            This is a warning alert - used to draw attention to important
+            information.
+          </div>
+          <div class="alert alert-danger" role="alert">
+            This is a danger alert - used for error messages.
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="mb-5">
+          <h3 class="mb-3">Cards</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text">
+                    This is a basic Bootstrap card component. Cards are flexible
+                    content containers.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 2</h5>
+                  <p class="card-text">
+                    Cards can contain various types of content including text,
+                    images, and buttons.
+                  </p>
+                  <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-dark text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Dark Card</h5>
+                  <p class="card-text">
+                    Cards can also have different background colors and text
+                    colors.
+                  </p>
+                  <a href="#" class="btn btn-light">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-5 pt-4 pb-4 text-center bg-light rounded">
+        <p class="mb-1">
+          <strong>Bootstrap Session 1: Introduction and Core Concepts</strong>
+        </p>
+        <p class="mb-1">Instructor: Saad Hassan Saad</p>
+        <p class="mb-0">ADA Egypt - Full Stack Web Development Course</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
